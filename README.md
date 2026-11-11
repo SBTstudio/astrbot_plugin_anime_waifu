@@ -36,6 +36,18 @@
 2. 重启 AstrBot，或在面板「插件管理」里点重载。
 3. 面板点开「二次元老婆抽卡」按需改次数 / 出率 / 冷却，保存后重载插件生效；**改角色库不需要重载**。
 
+### 从 GitHub 拉（推荐）
+
+```bash
+cd AstrBot/data/plugins
+git clone https://github.com/SBTstudio/astrbot_plugin_anime_waifu.git
+```
+
+之后 `git pull` 即可更新，面板重载插件生效。
+
+> **关于 Release 里那个 300MB 的 zip**：仓库本身已包含全部文件（含本地立绘），**这个 zip 可以不下载**。
+> 它只是给「不想用 git、想直接拷目录」的人准备的一键包，内容和仓库 `main` 分支一致。
+
 ### 包里都带了什么
 
 | 内容 | 说明 |
