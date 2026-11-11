@@ -1,0 +1,74 @@
+{
+ "daily_limit_game": {
+  "type": "int",
+  "description": "二游池每日次数",
+  "hint": "游戏类角色卡池每天可抽次数。设为 0 表示不限。",
+  "default": 6
+ },
+ "daily_limit_anime": {
+  "type": "int",
+  "description": "动漫池每日次数",
+  "hint": "动漫类角色卡池每天可抽次数。设为 0 表示不限。",
+  "default": 4
+ },
+ "game_pool_ratio": {
+  "type": "int",
+  "description": "二游池出率（%）",
+  "hint": "每次抽取按此概率决定去哪个池：60 表示 60% 二游 / 40% 动漫。某池当日满额后，剩余次数只会出另一个池。",
+  "default": 60
+ },
+ "draw_cooldown_seconds": {
+  "type": "int",
+  "description": "抽取冷却（秒）",
+  "hint": "两次抽取之间至少间隔多少秒，设为 0 表示不限制。",
+  "default": 30
+ },
+ "search_cooldown_seconds": {
+  "type": "int",
+  "description": "查询冷却（秒）",
+  "hint": "「查二次元老婆」两次查询之间至少间隔多少秒，设为 0 表示不限制。与抽卡冷却分开计算。",
+  "default": 120
+ },
+ "allow_repeat": {
+  "type": "bool",
+  "description": "允许重复抽到已拥有的角色",
+  "hint": "关闭时，会优先从该池中你还没收集的角色里抽。",
+  "default": false
+ },
+ "enable_image": {
+  "type": "bool",
+  "description": "抽卡时附带角色立绘",
+  "hint": "开启后会在抽卡结果里附一张图。图源：萌娘百科优先（按角色名精确匹配，无图时回退 AniList）。首次抽到某个角色时需要联网取图，之后走本地缓存。",
+  "default": true
+ },
+ "image_timeout": {
+  "type": "int",
+  "description": "取图超时（秒）",
+  "hint": "单次取图请求的超时时间。超时或失败时会自动降级为纯文本，不影响抽卡。",
+  "default": 20
+ },
+ "rank_size": {
+  "type": "int",
+  "description": "排行榜显示人数",
+  "hint": "群排行最多显示多少人。",
+  "default": 10
+ },
+ "level_step": {
+  "type": "int",
+  "description": "图鉴每级所需角色数",
+  "hint": "「我的二次元老婆」「我的图鉴」里显示的等级按此换算：每收集这么多位升一级，默认 25。",
+  "default": 25
+ },
+ "whitelist_groups": {
+  "type": "list",
+  "description": "群聊白名单",
+  "hint": "填写群号后，仅这些群可以使用。留空表示不限制。",
+  "default": []
+ },
+ "blacklist_groups": {
+  "type": "list",
+  "description": "群聊黑名单",
+  "hint": "这些群禁止使用本插件。",
+  "default": []
+ }
+}

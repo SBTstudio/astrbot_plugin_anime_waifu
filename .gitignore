@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 运行时生成的数据（每台机器各自一份，不入库）
+waifu.db
+waifu.db-journal
+waifu.db-wal
+waifu.db-shm
+images.json
+*.log
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 发布用的打包产物
+*.zip

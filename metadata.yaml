@@ -1,0 +1,13 @@
+name: astrbot_plugin_anime_waifu
+display_name: 二次元老婆抽卡
+desc: 从 2004 位二次元 / 游戏角色（202 部作品）里抽老婆的集卡插件，双卡池（二游 1351 / 动漫 653）。支持立绘、全员专属简介、SSR/SR 稀有度、编号查询、老婆图鉴、SSR 排行榜、群排行与持有查询；角色库连图一起打包可移植，长回复自动打包成 md 文件，角色库改动后自动重载，无需手动操作。全平台可用（含 QQ 官方机器人）。
+version: v2.4.0
+author: 沃雅妮莎
+repo:
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - qq_official_webhook
+  - telegram
+  - discord
+  - webchat
